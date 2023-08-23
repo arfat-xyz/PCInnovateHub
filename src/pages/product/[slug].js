@@ -58,14 +58,14 @@ const SingleProductPage = ({ data }) => {
                 <div className="flex mb-4 items-center">
                   <span className="flex items-center">
                     <Rating
-                      initialRating={totalRating / data.reviews.length}
+                      initialRating={totalRating / data?.reviews.length}
                       emptySymbol={<AiOutlineStar color="#ffa31a" />}
                       fullSymbol={<AiFillStar color="#ffa31a" />}
                       readonly
                     />
                   </span>
                   <span className="flex items-center pl-5 -mt-2">
-                    Reviews: {data.reviews.length}
+                    Reviews: {data?.reviews.length}
                   </span>
                 </div>
 
