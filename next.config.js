@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  env: {
+    NEXTAUTH_SECRET: "a507022cb9292b410949f7867cc2b71a",
+  },
   images: {
     remotePatterns: [
       {
