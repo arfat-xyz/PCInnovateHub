@@ -26,9 +26,9 @@ const Modal = ({ showModal, setShowModal, products }) => {
                 products.map((product) => (
                   <li
                     key={product._id}
-                    className="grid grid-cols-12 overflow-hidden p-4 items-center shadow-lg rounded-lg mb-7"
+                    className="flex flex-col md:grid gap-5 grid-cols-12 overflow-hidden p-4 items-center shadow-lg rounded-lg mb-7"
                   >
-                    <div className="col-span-3">
+                    <div className=" md:col-span-3">
                       <Image
                         src={product?.image}
                         width={228}
@@ -36,7 +36,7 @@ const Modal = ({ showModal, setShowModal, products }) => {
                         alt={product?.productName}
                       />
                     </div>
-                    <div className="col-span-6">
+                    <div className=" md:col-span-6">
                       <h1 className="font-bold text-2xl">
                         {product?.productName}
                       </h1>
@@ -76,7 +76,7 @@ const Modal = ({ showModal, setShowModal, products }) => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-span-3 flex flex-col justify-center align-middle">
+                    <div className=" md:col-span-3 flex flex-col justify-center align-middle">
                       <p className="text-center text-3xl">৳ {product?.price}</p>
                       <button
                         onClick={() => {
